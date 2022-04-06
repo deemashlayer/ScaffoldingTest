@@ -1,0 +1,41 @@
+version: "1.0"
+info:
+  scaffold: test.end2end.scaffolding:generateScaffolding
+  model: int-scaffold
+services:
+- serviceName: test.end2end.scaffolding:generateScaffolding
+  packages:
+  - name: ScaffoldingTest
+    version: "1.0"
+- serviceName: wm.client.scaffolding.scaffolding:generateWorkflowScaffolding
+  packages:
+  - name: WmCloud
+    version: 10.11.0.0.28
+configurationVariables:
+  statisticsdatacollector.monitorConfig.maxJdbcPoolConnections: "4"
+  statisticsdatacollector.monitorConfig.luceneMemorySize: "256"
+  jndi.DEFAULT_IS_JNDI_PROVIDER.providerURL: nsp://localhost:9000
+  statisticsdatacollector.monitorConfig.enabled: "true"
+  keystore.DEFAULT_IS_KEYSTORE.keyAlias.ssos.keyAliasPassword: '*****'
+  messaging.IS_UM_CONNECTION.type: UM
+  truststore.DEFAULT_JVM_TRUSTSTORE.ksPassword: '*****'
+  messaging.DefaultEndPoint.clientGroupName: IntegrationServer
+  statisticsdatacollector.monitorConfig.searcherThreadCount: "8"
+  messaging.IS_UM_CONNECTION.CLIENTPREFIX: J_jRQtEolDEurgAVIwwwADXaZQs_
+  statisticsdatacollector.monitorConfig.retentionDays: "30"
+  messaging.DefaultEndPoint.useSourceBrokerTruststore: "true"
+  messaging.DefaultEndPoint.useSourceBrokerKeystore: "true"
+  statisticsdatacollector.monitorConfig.indexerThreadCount: "8"
+  truststore.DEFAULT_JVM_TRUSTSTORE.ksLocation: ..\..\..\..\..\..\..\..\..\Program
+    Files\Java\jdk1.8.0_281\jre\lib\security\cacerts
+  messaging.IS_UM_CONNECTION.url: nsp://localhost:9000
+  messaging.DefaultEndPoint.CLIENTPREFIX: J_jRQtEolDEurgAVIwwwADXaZQs_
+  truststore.DEFAULT_IS_TRUSTSTORE.ksLocation: ..\..\..\common\conf\platform_truststore.jks
+  truststore.DEFAULT_IS_TRUSTSTORE.ksPassword: '*****'
+  keystore.DEFAULT_IS_KEYSTORE.ksLocation: ..\..\..\common\conf\keystore.jks
+  jms.PE_NONTRANSACTIONAL_ALIAS.clientID: IS0f8b8bf4_0b1b_40c2_b702_158f7b3857dd
+  keystore.DEFAULT_IS_KEYSTORE.ksPassword: '*****'
+  jms.DEFAULT_IS_JMS_CONNECTION.clientID: DEFAULT_IS_JMS_CLIENT
+  statisticsdatacollector.monitorConfig.maxResults: "1500000"
+  messaging.DefaultEndPoint.brokerName: 'Broker #1'
+  user.Administrator.password: '*****'

@@ -1,0 +1,12 @@
+#aclmap for package: ScaffoldingTest
+#Wed Apr 06 11:23:34 EDT 2022
+test.end2end.scaffolding\:workflow1=
+test.end2end.verify=
+test.end2end.manifest\:generateManifest=
+test.end2end.manifest=
+test.end2end.verify\:verifyManifest=
+test.end2end=
+test.end2end.scaffolding\:generateScaffolding=
+test=Internal
+test.end2end.verify\:verifyScaffolding=
+test.end2end.scaffolding=
